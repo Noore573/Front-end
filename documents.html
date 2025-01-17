@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Documents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gradient-to-bl from-white via-green-200 h-screen flex items-center justify-center">
+    <div class="flex flex-row absolute top-1 right-5">
+        <!-- Navigation -->
+        <div class="flex flex-row">
+            <button id="Homebtn"><h1 class="underline font-sans text-lg mx-3 text-green-700 hover:translate-y-2 transform duration-150">Home</h1></button>
+            <button id="Loginbtn"><h1 class="underline font-sans text-lg mx-3 text-green-700 hover:translate-y-2 transform duration-150">Login</h1></button>
+        </div>
+        <div class="flex flex-row">
+            <img src="assets/logo.png" alt="Website logo"
+                class="h-32 w-32 object-cover hover:scale-105 transform duration-150">
+        </div>
+    </div>
+
+    <!-- Centered Box -->
+    <div class="bg-white flex flex-col items-center justify-start rounded-3xl mt-12 shadow-lg p-5 w-4/5 h-4/5">
+        <!-- Search Bar -->
+        <div class="w-full flex items-center justify-center mb-5 ">
+            <input id="searchBar" type="text" placeholder="Search by National id.."
+                class="w-3/4 px-4 py-2 border placeholder-green-300 text-green-700 border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:scale-105 transform duration-75 focus:ring-green-500">
+        </div>
+
+        <!-- Documents List -->
+        <div id="documentsList" class="grid grid-cols-3 gap-4 bg-white w-full h-full overflow-y-auto">
+            <!-- Dynamic content will be added here -->
+        </div>
+    </div>
+        <script src="documents.js"></script>
+    </body>
+</html>

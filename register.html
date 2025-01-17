@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet">
+    <title>Register Page</title>
+  </head>
+  <body class="bg-gradient-to-tr from-white via-green-200  via-lthird via-80% to-lfourth">
+    <div class="w-full h-fit flex">
+      <!-- Left Side -->
+      <div
+        class="w-full  md:w-1/2 h-screen flex flex-col justify-center md:px-20 px-10 ">
+        <img
+          src="assets/palestine-national-flag-map-icon-flat-save-gaza-free-palestine-country-symbol-stand-with-palestine-middle-east-west-asia-capital-name-jerusalem-vector-removebg-preview.png"
+          alt="Free Palestine"
+          class="object-contain h-1/5 mt-10 md:h-1/5">
+
+        <div class="Line flex flex-row justify-center items-center mt-4">
+          <div class="bg-[#40CCF2] h-1 w-2/6 px-9 mx-3 rounded-l-lg"></div>
+          <h1
+            class="capitalize h-full w-80 font-Rubik text-center text-lg font-bold text-[#40CCF2]">
+            Register your account
+          </h1>
+          <div class="bg-[#40CCF2] h-1 w-2/6 px-9 mx-3 rounded-r-lg"></div>
+        </div>
+
+        <div class="TextFields flex justify-center flex-col w-full mt-4">
+          <!-- Full Name -->
+          <input
+            type="text"
+            id="fullName"
+            class="w-full h-14 outline-none border-2 placeholder-green-300 border-green-600 rounded-3xl text-green-500 pl-4 my-2 focus:scale-105 transform transition-transform duration-300"
+            placeholder="Full Name">
+          <!-- National ID -->
+          <input
+            type="text"
+            id="nationalId"
+            class=" focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            placeholder="National ID">
+          <input
+            type="password"
+            id="password"
+            class=" focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            placeholder="Password">
+
+          <!-- Birthdate -->
+          <input
+            type="date"
+            id="birthdate"
+            class="  focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            placeholder="Birthdate">
+          <!-- Phone Number -->
+          <input
+            type="number"
+            id="phoneNumber"
+            class=" focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            placeholder="Phone Number">
+          <!-- Account Type -->
+          <div class="flex flex-col mt-4">
+            <label class="text-green-600 font-bold mb-2">Account Type</label>
+            <div class="flex items-center mb-2">
+              <input
+                type="radio"
+                id="userAccount"
+                name="accountType"
+                value="user"
+                class="w-5 h-5">
+              <label for="userAccount" class="ml-2 text-green-600">User
+                Account</label>
+            </div>
+            <div class="flex items-center">
+              <input
+                type="radio"
+                id="adminAccount"
+                name="accountType"
+                value="admin"
+                class="w-5 h-5">
+              <label for="adminAccount" class="ml-2 text-green-600">Admin
+                Account</label>
+            </div>
+          </div>
+
+          <!-- Register Button -->
+          <div
+            class="RegisterBtn flex justify-center items-center h-1/4 my-2 hover:scale-105">
+            <button
+              class="bg-green-600 w-1/2 h-1/2 justify-center text-white text-2xl rounded-3xl hover:bg-green-400 hover:scale-110 transform transition-transform duration-300"
+              id="registerBtn">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="flex items-center justify-center min-h-screen ">
+        <div class=" w-full hidden md:block">
+          <img
+            src="assets/6af28b987069c083e89d87f8cfbeb0a7-removebg-preview.png"
+            alt="Login Side"
+            class>
+        </div>
+      </div>
+      <!-- Link to External JavaScript -->
+      <script src="register.js"></script>
+    </body>
+  </html>

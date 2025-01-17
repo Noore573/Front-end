@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload file</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            #fileName {
+              white-space: nowrap; 
+              overflow: hidden; 
+              text-overflow: ellipsis; 
+            }
+          </style>
+    </head>
+    <body
+        class="bg-gradient-to-bl from-white via-green-200 h-screen flex items-center justify-center">
+        <div class="flex flex-row absolute top-5 right-5 ">
+            
+            <!-- home -->
+            <div class="flex flex-row ">
+                <button id="Homebtn"><h1 class="underline font-sans text-lg mx-3 text-green-700 hover:translate-y-2 transform duration-150 ">Home</h1></button>
+                <button id="Loginbtn"><h1 class="underline font-sans text-lg mx-3 text-green-700 hover:translate-y-2 transform duration-150">Login</h1></button>
+            </div>
+            <div class="  flex flex-row ">
+                
+                <img src="assets/logo.png" alt="Website logo"
+                    class="h-32 w-32 object-cover hover:scale-105 transform duration-150">
+    
+            </div>
+
+        </div>
+        <!-- Top-right logo -->
+
+
+        <!-- Centered box -->
+        <div
+            class="bg-white flex flex-row items-center justify-center m-30 rounded-3xl shadow-lg p-5 w-2/3 h-2/3">
+            <!-- Content of the box -->
+            <!-- upload box -->
+            <div id="uploadBox"
+                class="cursor-pointer flex flex-col items-center justify-center h-full w-1/2 m-10 overflow-hidden">
+                <div
+                    class="bg-[url('assets/uplaodnewnew.png')]  bg-contain my-3 bg-center  flex flex-row items-center justify-center m-50 rounded-lg  p-5 w-full h-full"></div>
+                <h1 id="uploadIcon"
+                    class="text-xl font-bold text-center font-sans text-green-700">insert
+                    your file please</h1>
+                <input type="file" id="fileInput" accept=".pdf,.doc,.docx"
+                    class="hidden">
+            </div>
+            <!-- right side -->
+            <div
+                class="flex flex-col  items-start justify-around h-full w-1/2  m-10 overflow-hidden text-ellipsis no-scrollbar">
+                <h1
+                    class="text-xl font-bold font-sans text-center text-green-700 "
+                    id="fileName">File name: Not uploaded</h1>
+                <h1
+                    class="text-xl font-bold font-sans text-center text-green-700"
+                    id="fileSize">File size: Not uploaded</h1>
+                <div
+                    class="Loginbtn  flex justify-center items-center w-full h-1/6  ">
+                    <button
+                        class="bg-green-600 w-3/4  h-3/4 justify-center text-white text-2xl  font-sans rounded-3xl hover:bg-green-400 hover:scale-110 transform transition-transform duration-300"
+                        id="loginBtn">
+                        Upload file
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <script src="uploadfile.js"></script>
+    </body>
+</html>

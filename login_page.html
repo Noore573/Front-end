@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
+  <title>Login Page</title>
+</head>
+<body class="bg-gradient-to-bl from-white via-green-200  via-lthird via-50% to-lfourth">
+    <script src="login.js"></script>
+  <div class="w-full h-fit flex">
+    <!-- Left Side -->
+    <div class="w-full md:w-1/2 h-screen flex flex-col justify-center md:px-20 px-10 ">
+      <img src="assets/palestine-national-flag-map-icon-flat-save-gaza-free-palestine-country-symbol-stand-with-palestine-middle-east-west-asia-capital-name-jerusalem-vector-removebg-preview.png" alt="Free palestine" class="object-contain h-60 md:h-70">
+      
+      <div class="Line flex flex-row justify-center items-center mt-4">
+        <div class="bg-[#40CCF2] h-1 w-2/6 px-9 mx-3 rounded-l-lg"></div>
+        <h1 class="capitalize h-full w-80 font-sans text-center text-lg font-bold text-[#40CCF2]">
+          Login please
+        </h1>
+        <div class="bg-[#40CCF2] h-1 w-2/6 px-9 mx-3 rounded-r-lg"></div>
+      </div>
+
+      <div class="TextFields flex justify-center flex-col w-full mt-4">
+        <input
+          type="text"
+          id="National id"
+          class="w-full h-14 outline-none border-2 placeholder-green-300 border-green-600 rounded-3xl text-green-500 pl-4 my-2 focus:scale-105 transform transition-transform duration-300"
+          placeholder="National id"
+        >
+        <input
+          type="password"
+          id="password"
+          class="w-full h-14 outline-none border-2 placeholder-green-300 border-green-600 rounded-3xl text-green-500 pl-4 my-2 focus:scale-105 transform transition-transform duration-300"
+          placeholder="Password"
+        >
+        <div class="Loginbtn flex justify-center items-center h-1/4 my-2 ">
+          <button class="bg-green-600 w-1/2 h-full justify-center text-white font-sans text-2xl rounded-3xl hover:bg-green-400 hover:scale-110 transform transition-transform duration-300"
+          id="loginBtn">
+            Login
+          </button>
+        </div>
+        <div class="flex items-start justify-center">
+          <p class="font-sans text-lg">
+          New to the website?  <button id="registerbtn" class=" text-green-400 underline hover:text-green-300 font-bold cursor-pointer hover:scale-105 transform duration-75" > register</button> </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="flex items-center justify-center min-h-screen ">
+      <div class=" w-full hidden md:block">
+        <img
+          src="assets/ca-removebg-preview.png"
+          alt="Login Side"
+          class=""
+        >
+      </div>
+    </div>
+    
+  </div>
+  <script src="login.js"></script>
+
+</body>
+</html>
