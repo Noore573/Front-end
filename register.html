@@ -8,8 +8,9 @@
       rel="stylesheet">
     <title>Register Page</title>
   </head>
-  <body class="bg-gradient-to-tr from-white via-green-200  via-lthird via-80% to-lfourth">
-    <div class="w-full h-fit flex">
+  <body
+    class="bg-gradient-to-tr from-white via-green-200    via-lthird via-80% to-lfourth h-screen">
+    <div class="w-full h-screen flex">
       <!-- Left Side -->
       <div
         class="w-full  md:w-1/2 h-screen flex flex-col justify-center md:px-20 px-10 ">
@@ -32,31 +33,31 @@
           <input
             type="text"
             id="fullName"
-            class="w-full h-14 outline-none border-2 placeholder-green-300 border-green-600 rounded-3xl text-green-500 pl-4 my-2 focus:scale-105 transform transition-transform duration-300"
+            class="w-full h-14 outline-none border-2 placeholder-green-300 border-green-600 rounded-3xl text-green-500 pl-4 my-2 focus:ring-2 focus:scale-105 transform duration-75 focus:ring-green-500"
             placeholder="Full Name">
           <!-- National ID -->
           <input
             type="text"
             id="nationalId"
-            class=" focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            class=" focus:ring-2 focus:scale-105 transform duration-75 focus:ring-green-500 placeholder-green-300  w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
             placeholder="National ID">
           <input
             type="password"
             id="password"
-            class=" focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            class="  placeholder-green-300 focus:ring-2 focus:scale-105 transform duration-75 focus:ring-green-500 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2 "
             placeholder="Password">
 
           <!-- Birthdate -->
           <input
             type="date"
             id="birthdate"
-            class="  focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            class="  focus:ring-2 focus:scale-105 transform duration-75 focus:ring-green-500 placeholder-green-300  w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2 "
             placeholder="Birthdate">
           <!-- Phone Number -->
           <input
             type="number"
             id="phoneNumber"
-            class=" focus:scale-105 placeholder-green-300 transform transition-transform duration-300 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
+            class="  placeholder-green-300 focus:ring-2 focus:scale-105 transform duration-75 focus:ring-green-500 w-full h-14 outline-none border-2 border-green-600 rounded-3xl text-green-500 pl-4 my-2"
             placeholder="Phone Number">
           <!-- Account Type -->
           <div class="flex flex-col mt-4">
@@ -68,7 +69,7 @@
                 name="accountType"
                 value="user"
                 class="w-5 h-5">
-              <label for="userAccount" class="ml-2 text-green-600">User
+              <label for="userAccount" class="ml-2 font-sans text-green-600">User
                 Account</label>
             </div>
             <div class="flex items-center">
@@ -77,20 +78,26 @@
                 id="adminAccount"
                 name="accountType"
                 value="admin"
-                class="w-5 h-5">
-              <label for="adminAccount" class="ml-2 text-green-600">Admin
+                class="w-5 h-5 font-sans">
+              <label for="adminAccount" class="ml-2 font-sans text-green-600">Admin
                 Account</label>
             </div>
           </div>
 
           <!-- Register Button -->
           <div
-            class="RegisterBtn flex justify-center items-center h-1/4 my-2 hover:scale-105">
+            class="RegisterBtn flex flex-col justify-center items-center h-1/4 my-2 hover:scale-105">
             <button
               class="bg-green-600 w-1/2 h-1/2 justify-center text-white text-2xl rounded-3xl hover:bg-green-400 hover:scale-110 transform transition-transform duration-300"
               id="registerBtn">
               Register
             </button>
+            <div class="flex items-start justify-center ">
+              <p class="font-sans text-base">
+                Already have an account? <button id="loginbtn"
+                  class=" text-green-400 underline hover:text-green-300 font-bold cursor-pointer hover:scale-105 transform duration-75">
+                  Login</button> </p>
+            </div>
           </div>
         </div>
       </div>
